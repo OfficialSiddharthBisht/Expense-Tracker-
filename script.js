@@ -1,4 +1,3 @@
-
 const monthObj = {
     "01" : "January",
     "02" : "February",
@@ -14,7 +13,6 @@ const monthObj = {
     "12" : "December",
 } 
 
-// * LocalStorage
 
 function displayCard(){
     let cards_section = document.getElementById("cards-section");
@@ -30,5 +28,4 @@ function displayCard(){
     <p id = "color2"> Your Expense is ${expense}.
     <p id ="color3"> Your savings are ${savings}.`
     cards_section.append(card);
-    localStorage.setItem(monthObj[month],card);
 }
