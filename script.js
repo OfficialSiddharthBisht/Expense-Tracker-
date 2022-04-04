@@ -13,14 +13,15 @@ const monthObj = {
     "11" : "November",
     "12" : "December",
 } 
-let cards_section = document.getElementById("cards-section");
+
+// * LocalStorage
+
 function displayCard(){
+    let cards_section = document.getElementById("cards-section");
     const month = document.getElementById("month").value.trim().split("-")[1];
     const income = document.getElementById("income").value;
     const expense = document.getElementById("expense").value;
     let savings = income - expense;
-    console.log(savings);
-
     let card = document.createElement("div");
     card.id = "card";
     
@@ -29,4 +30,5 @@ function displayCard(){
     <p id = "color2"> Your Expense is ${expense}.
     <p id ="color3"> Your savings are ${savings}.`
     cards_section.append(card);
+    localStorage.setItem(monthObj[month],card);
 }

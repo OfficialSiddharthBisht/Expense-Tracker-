@@ -2,6 +2,15 @@
     text-align: center;
     font-family: cursive;
 }
+h1{
+    text-decoration: underline;
+}
+form{
+    border: 3px solid gray;
+    padding: 50px;
+    margin: auto;
+    width: 50%;
+}
 form *{
     display: block;
     margin: auto;
@@ -12,17 +21,15 @@ button{
     color: white;
 }
 #cards-section{
+    padding: 50px;
     display: grid;
-    grid-template-rows: repeat(75px,3fr);
-    width: 80%;
-    margin: auto;
-    background-color :rgb(206, 201, 201);
-}
-#card-section div{
-    display: block;
+    grid-template-columns: repeat(4 , 1fr);
 }
 #card{
     background-color:rgb(195, 231, 231);
+    border: 2px solid grey;
+    padding: 5px;
+    margin: 15px;
 }
 #color1{
     color:darkgreen;
@@ -36,4 +43,5 @@ button{
 #color0{
     color: red;
     font-style: italic;
+    text-decoration: underline;
 }
