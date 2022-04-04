@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+    font-family: cursive;
+}
+form *{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+button{
+    background-color: blue;
+    color: white;
+}
