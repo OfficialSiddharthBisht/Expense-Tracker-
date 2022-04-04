@@ -1,6 +1,32 @@
+
+const monthObj = {
+    "01" : "January",
+    "02" : "February",
+    "03" : "March",
+    "04" : "April",
+    "05" : "May",
+    "06" : "June",
+    "07" : "July",
+    "08" : "August",
+    "09" : "September",
+    "10" : "October",
+    "11" : "November",
+    "12" : "December",
+} 
+let cards_section = document.getElementById("cards-section");
 function displayCard(){
-    const month = document.getElementById("month").value;
+    const month = document.getElementById("month").value.trim().split("-")[1];
     const income = document.getElementById("income").value;
     const expense = document.getElementById("expense").value;
-    console.log(month , income ,expense ,"working");
+    let savings = income - expense;
+    console.log(savings);
+
+    let card = document.createElement("div");
+    card.id = "card";
+    
+    card.innerHTML = `<h2 id = "color0"> ${monthObj[month]}</h2>
+    <p id = "color1"> Your Income is ${income}.
+    <p id = "color2"> Your Expense is ${expense}.
+    <p id ="color3"> Your savings are ${savings}.`
+    cards_section.append(card);
 }

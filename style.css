@@ -11,3 +11,29 @@ button{
     background-color: blue;
     color: white;
 }
+#cards-section{
+    display: grid;
+    grid-template-rows: repeat(75px,3fr);
+    width: 80%;
+    margin: auto;
+    background-color :rgb(206, 201, 201);
+}
+#card-section div{
+    display: block;
+}
+#card{
+    background-color:rgb(195, 231, 231);
+}
+#color1{
+    color:darkgreen;
+}
+#color2{
+    color: crimson;
+}
+#color3{
+    color: fuchsia;
+}
+#color0{
+    color: red;
+    font-style: italic;
+}
